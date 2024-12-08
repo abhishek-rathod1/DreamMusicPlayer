@@ -1,0 +1,77 @@
+.song-list {
+  padding: 10px; /* Reduced padding for a smaller appearance */
+  width: 90%; /* Slightly reduced width */
+  margin: 0 auto; /* Center the list */
+  color: aliceblue;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px; /* Reduced padding */
+  color: white;
+  margin-right: 40px; /* Reduced margin for a smaller layout */
+}
+
+.header-row h2 {
+  margin-left: 30px; /* Reduced margin */
+  font-size: 18px; /* Smaller font size */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px; /* Reduced font size */
+}
+
+th, td {
+  font-size: 12px; /* Smaller font size for table text */
+  padding: 6px; /* Reduced padding for smaller height */
+  text-align: left;
+}
+
+th {
+  color: aliceblue;
+}
+
+.song-icon img {
+  width: 30px; /* Reduced size */
+  height: 30px;
+}
+
+.song-title {
+  font-weight: bold;
+}
+
+/* .song-item:hover {
+  background-color: #520000;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Ensure the background matches your theme */
+  color: aliceblue;
+  overflow-x: hidden; /* Prevent horizontal scrolling if any */
+}
+
+html {
+  height: 100%;
+  overflow: auto;
+}
+
+.song-item-playing {
+  background-color: #520000; /* Highlight with a light gray */
+}
+
+/* Highlight style for the currently playing song */
+.song-item.highlight {
+  background-color: #520000; /* Light blue */
+  font-weight: bold; /* Optional: Make it visually distinct */
+  color: #333; /* Adjust text color for contrast */
+}
+/* 
+.song-item:hover {
+  background-color: #520000; 
+} */

@@ -1,0 +1,107 @@
+.sidebar-inside {
+  /* position: relative; */
+  /* width: 100%; */
+  height: max-content;
+  /* background-color: #121212; Dark background */
+  /* color: white; Text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  position: fixed;
+  margin-right:50px ;
+}
+/* Sidebar Open/Closed States */
+.sidebar-inside.closed {
+  transform: translateX(-100%);
+}
+.sidebar-inside.open {
+  transform: translateX(0);
+}
+/* Burger Menu Icon */
+.burger-menu {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1100;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.burger-menu img {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebar-inside .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e50914; /* Highlighted logo color */
+  margin-bottom: 30px;
+}
+
+.sidebar-inside .menu {
+  width: 100%;
+  flex-grow: 0;
+}
+
+.sidebar-inside .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-inside .menu ul li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar-inside img {
+  
+  margin-right: 10px;
+}
+
+.sidebar-inside .menu ul li:hover {
+  color: #e50914;
+}
+
+.sidebar-inside .menu ul li svg {
+  margin-right: 10px; /* Add spacing between icon and text */
+}
+
+.sidebar-inside .general {
+  
+  font-size: 0.9rem;
+  padding-top: 15px;
+  margin-top: 250px;
+}
+
+.sidebar-inside .general ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-inside .general ul li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* margin: 10px 0; */
+  cursor: pointer;
+}
+
+.sidebar-inside .general ul li:hover {
+  color: #e50914;
+}
+
+
+
+@media (max-width: 768px){
+  
+}
