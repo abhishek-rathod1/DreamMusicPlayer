@@ -80,9 +80,7 @@
   }
 
   /* Hide the Middle Section */
-  .middle {
-    /* display: none; */
-  }
+  
 
   /* Make only the right div (NowPlaying) full screen */
   .right {
