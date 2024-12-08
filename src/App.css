@@ -1,55 +1,54 @@
-/* Overall App Container */
+
 .app {
   display: flex;
   height: 100vh;
   width: 100%;
-  background-color: #121212; /* Dark background for the app */
-}
+  background-color: #121212; }
 
-/* Sidebar Section */
+
 .sidebar {
-  flex: 0 0 20%; /* Sidebar takes 20% width */
-  background-color: #0E0E0E; /* Slightly darker shade for contrast */
+  flex: 0 0 20%; 
+  background-color: #0E0E0E; 
   color: white;
   padding: 20px;
-  box-sizing: border-box; /* Includes padding in width and height calculations */
+  box-sizing: border-box; 
 }
 
-/* Background Section */
+
 .background {
-  flex: 1; /* Fills the remaining space */
+  flex: 1; 
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 100%;
 }
 
-/* Middle Section */
+
 .middle {
-  flex: 2; /* Middle section takes twice the space of the right section */
+  flex: 2; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(#4A0101, #000000); /* Gradient background */
+  background: linear-gradient(#4A0101, #000000); 
   box-sizing: border-box;
 }
 
-/* Right Section */
+
 .right {
-  /* Ensures the now-playing-container stays within bounds */
+  
   background: linear-gradient(#0f0f0f, #000000); 
   padding: 20px;
   display: flex;
-  flex-direction: column; /* Allow content stacking */
-  justify-content: flex-end; /* Align items toward the bottom */
+  flex-direction: column; 
+  justify-content: flex-end; 
   align-items: flex-start;
-  height: 100%; /* Ensure the div fills available height */
+  height: 100%; 
   box-sizing: border-box;
   position: relative;
 }
 
-/* Artist Section */
+
 .artist {
   width: 80%;
   height: auto;
@@ -59,30 +58,27 @@
 }
 
 .artist img {
-  max-width: 100%; /* Ensures image fits within container */
+  max-width: 100%; 
   max-height: 100%;
 }
 
-/* Song List Section */
+
 .songlist {
-  grid-column: 1 / 2; /* Aligns in grid */
-  background-color: #bdc3c7; /* Light gray background */
+  grid-column: 1 / 2; 
+  background-color: #bdc3c7; 
   padding: 20px;
   box-sizing: border-box;
-  border: 1px solid #ccc; /* Subtle border */
+  border: 1px solid #ccc; 
 }
 
-/* Responsive Behavior - Mobile View */
+
 @media (max-width: 768px) {
-  /* Hide the Sidebar */
+  
   .sidebar {
     display: none;
   }
 
-  /* Hide the Middle Section */
   
-
-  /* Make only the right div (NowPlaying) full screen */
   .right {
     flex: 1 1 100%;
     width: 100%;
@@ -93,7 +89,6 @@
     align-items: flex-start;
   }
 
-  /* Make NowPlaying take full viewport */
   .background {
     flex-direction: column;
   }

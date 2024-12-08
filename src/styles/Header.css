@@ -1,4 +1,4 @@
-/* Header Styles */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -6,8 +6,7 @@
   padding: 10px 20px;
   background-color: transparent;
   color: white;
-  /* font-family: Arial, sans-serif; */
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  
 }
 
 .header-left {
@@ -29,11 +28,7 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* .header-tab:hover {
-  background-color: #444;
-  border-radius: 5px;
-  color: #1db954; /* Spotify green-like color for hover */
-/* } */ */
+
 
 .header-right {
   display: flex;
